@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2bdaa967-10c9-4612-9bba-96cbee5ec2e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\TowerDiffence">
+      <UniqueIdentifier>{dabb7512-f33d-45b3-a721-e9efb2ed141a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="仕様書">
+      <UniqueIdentifier>{dbb87042-3b32-4094-b317-18b394216198}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="tdGame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tdGame.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TowerDiffence.txt">
+      <Filter>仕様書</Filter>
+    </None>
+    <None Include="内部仕様.txt" />
+  </ItemGroup>
+</Project>
