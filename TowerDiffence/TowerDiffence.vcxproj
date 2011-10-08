@@ -50,6 +50,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -65,6 +66,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -74,17 +76,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="tdGame.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="game.h" />
-    <ClInclude Include="tdGame.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="CodingRules.txt" />
     <None Include="TowerDiffence.txt" />
     <None Include="内部仕様.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\scenes\debug_scene.cpp" />
+    <ClCompile Include="src\scenes\debug_scene2.cpp" />
+    <ClCompile Include="src\system\FPSController.cpp" />
+    <ClCompile Include="src\system\game.cpp" />
+    <ClCompile Include="src\system\scene\base.cpp" />
+    <ClCompile Include="src\system\scene\manager.cpp" />
+    <ClCompile Include="src\tdGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\scenes.h" />
+    <ClInclude Include="src\scenes\debug_scene.h" />
+    <ClInclude Include="src\scenes\debug_scene2.h" />
+    <ClInclude Include="src\system\FPSController.h" />
+    <ClInclude Include="src\system\game.h" />
+    <ClInclude Include="src\system\scene\base.h" />
+    <ClInclude Include="src\system\scene\manager.h" />
+    <ClInclude Include="src\tdGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

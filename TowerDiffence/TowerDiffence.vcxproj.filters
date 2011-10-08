@@ -8,36 +8,76 @@
     <Filter Include="src">
       <UniqueIdentifier>{2bdaa967-10c9-4612-9bba-96cbee5ec2e7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\TowerDiffence">
-      <UniqueIdentifier>{dabb7512-f33d-45b3-a721-e9efb2ed141a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="仕様書">
       <UniqueIdentifier>{dbb87042-3b32-4094-b317-18b394216198}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="game.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="tdGame.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="tdGame.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="game.h">
-      <Filter>src</Filter>
-    </ClInclude>
+    <Filter Include="src\system">
+      <UniqueIdentifier>{ed4f46b6-5f42-4e37-8e11-7cbe1c4b7f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\system\scene">
+      <UniqueIdentifier>{7f889788-94b2-4f0a-bda5-6b4df2d8d934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scenes">
+      <UniqueIdentifier>{73bd9d48-12c8-49e3-a72b-f69db454abc5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="TowerDiffence.txt">
       <Filter>仕様書</Filter>
     </None>
-    <None Include="内部仕様.txt" />
+    <None Include="内部仕様.txt">
+      <Filter>仕様書</Filter>
+    </None>
+    <None Include="CodingRules.txt">
+      <Filter>仕様書</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\FPSController.cpp">
+      <Filter>src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\game.cpp">
+      <Filter>src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tdGame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\scene\base.cpp">
+      <Filter>src\system\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\scene\manager.cpp">
+      <Filter>src\system\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\debug_scene.cpp">
+      <Filter>src\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\debug_scene2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\system\FPSController.h">
+      <Filter>src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\game.h">
+      <Filter>src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tdGame.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\scene\base.h">
+      <Filter>src\system\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\scene\manager.h">
+      <Filter>src\system\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\debug_scene.h">
+      <Filter>src\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\debug_scene2.h" />
   </ItemGroup>
 </Project>
