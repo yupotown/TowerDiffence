@@ -21,6 +21,11 @@ Base *DebugScene2::Update() {
 
 void DebugScene2::Draw() {
 	DxLib::DrawBox(0, 0, 640, 480, DxLib::GetColor(255, 255, 255), TRUE);
+	DxLib::DrawGraph(160, 120, graph_debug.GetHandle(), FALSE);
+}
+
+void DebugScene2::Initialize() {
+	graph_debug.Load("../TowerDiffence/data/debug.bmp");
 }
 
 }

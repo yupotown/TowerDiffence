@@ -14,11 +14,14 @@
     <Filter Include="src\system">
       <UniqueIdentifier>{ed4f46b6-5f42-4e37-8e11-7cbe1c4b7f96}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\system\scene">
-      <UniqueIdentifier>{7f889788-94b2-4f0a-bda5-6b4df2d8d934}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\scenes">
       <UniqueIdentifier>{73bd9d48-12c8-49e3-a72b-f69db454abc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\system\scene%28not a directory%29">
+      <UniqueIdentifier>{6efe1c64-c14b-473f-bd47-d61a0327ab17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\system\resource%28not a directory%29">
+      <UniqueIdentifier>{4db38b6b-6e2e-4787-a117-2a7ffbd861a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -45,16 +48,39 @@
     <ClCompile Include="src\tdGame.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\system\scene\base.cpp">
-      <Filter>src\system\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="src\system\scene\manager.cpp">
-      <Filter>src\system\scene</Filter>
-    </ClCompile>
     <ClCompile Include="src\scenes\debug_scene.cpp">
       <Filter>src\scenes</Filter>
     </ClCompile>
-    <ClCompile Include="src\scenes\debug_scene2.cpp" />
+    <ClCompile Include="src\scenes\debug_scene2.cpp">
+      <Filter>src\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\resource_graphic.cpp">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\resource_manager.cpp">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\resource_manager_base.cpp">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\resource_reference_counter.cpp">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\resource_sound.cpp">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\scene_base.cpp">
+      <Filter>src\system\scene%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\scene_manager.cpp">
+      <Filter>src\system\scene%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\resource_graphic_manager.cpp">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\resource_sound_manager.cpp">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\system\FPSController.h">
@@ -66,18 +92,47 @@
     <ClInclude Include="src\tdGame.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\system\scene\base.h">
-      <Filter>src\system\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="src\system\scene\manager.h">
-      <Filter>src\system\scene</Filter>
-    </ClInclude>
     <ClInclude Include="src\scenes\debug_scene.h">
       <Filter>src\scenes</Filter>
     </ClInclude>
     <ClInclude Include="src\scenes.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\scenes\debug_scene2.h" />
+    <ClInclude Include="src\scenes\debug_scene2.h">
+      <Filter>src\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_sound.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_base.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_graphic.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_manager.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_manager_base.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_reference_counter.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\scene_base.h">
+      <Filter>src\system\scene%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\scene_manager.h">
+      <Filter>src\system\scene%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_graphic_manager.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\resource_sound_manager.h">
+      <Filter>src\system\resource%28not a directory%29</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

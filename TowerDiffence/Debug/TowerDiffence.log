@@ -1,10 +1,22 @@
-﻿2011/10/08 21:57:33 にビルドを開始しました。
+﻿2011/10/10 16:11:24 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "D:\Yupo\Programming\Visual_Studio_2010\Projects\Game\TowerDiffence\TowerDiffence\TowerDiffence.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Debug\TowerDiffence.unsuccessfulbuild" を作成しています。
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\system\scene\manager.cpp
-         manager.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\scenes\debug_scene.cpp src\scenes\debug_scene2.cpp src\system\resource_graphic_manager.cpp src\system\resource_graphic.cpp src\system\resource_manager.cpp src\system\resource_sound.cpp src\system\resource_sound_manager.cpp src\tdGame.cpp
+         resource_sound_manager.cpp
+         resource_graphic_manager.cpp
+         コードを生成中...
+         コンパイル中...
+         debug_scene.cpp
+         コードを生成中...
+         コンパイル中...
+         tdGame.cpp
+         resource_sound.cpp
+         resource_manager.cpp
+         resource_graphic.cpp
+         debug_scene2.cpp
+         コードを生成中...
        ManifestResourceCompile:
          すべての出力が最新のものです。
        Link:
@@ -14,8 +26,15 @@
          Debug\debug_scene2.obj
          Debug\FPSController.obj
          Debug\game.obj
-         Debug\base.obj
-         Debug\manager.obj
+         Debug\resource_graphic_manager.obj
+         Debug\resource_graphic.obj
+         Debug\resource_manager.obj
+         Debug\resource_manager_base.obj
+         Debug\resource_reference_counter.obj
+         Debug\resource_sound.obj
+         Debug\scene_base.obj
+         Debug\scene_manager.obj
+         Debug\resource_sound_manager.obj
          Debug\tdGame.obj
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\TowerDiffence.exe.embed.manifest" /manifest Debug\TowerDiffence.exe.intermediate.manifest
@@ -30,4 +49,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:06.43
+経過時間 00:00:11.41

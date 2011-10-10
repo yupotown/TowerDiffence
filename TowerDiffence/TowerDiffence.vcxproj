@@ -86,8 +86,15 @@
     <ClCompile Include="src\scenes\debug_scene2.cpp" />
     <ClCompile Include="src\system\FPSController.cpp" />
     <ClCompile Include="src\system\game.cpp" />
-    <ClCompile Include="src\system\scene\base.cpp" />
-    <ClCompile Include="src\system\scene\manager.cpp" />
+    <ClCompile Include="src\system\resource_graphic_manager.cpp" />
+    <ClCompile Include="src\system\resource_graphic.cpp" />
+    <ClCompile Include="src\system\resource_manager.cpp" />
+    <ClCompile Include="src\system\resource_manager_base.cpp" />
+    <ClCompile Include="src\system\resource_reference_counter.cpp" />
+    <ClCompile Include="src\system\resource_sound.cpp" />
+    <ClCompile Include="src\system\scene_base.cpp" />
+    <ClCompile Include="src\system\scene_manager.cpp" />
+    <ClCompile Include="src\system\resource_sound_manager.cpp" />
     <ClCompile Include="src\tdGame.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -96,8 +103,17 @@
     <ClInclude Include="src\scenes\debug_scene2.h" />
     <ClInclude Include="src\system\FPSController.h" />
     <ClInclude Include="src\system\game.h" />
-    <ClInclude Include="src\system\scene\base.h" />
-    <ClInclude Include="src\system\scene\manager.h" />
+    <ClInclude Include="src\system\resource_graphic_manager.h" />
+    <ClInclude Include="src\system\resource.h" />
+    <ClInclude Include="src\system\resource_base.h" />
+    <ClInclude Include="src\system\resource_graphic.h" />
+    <ClInclude Include="src\system\resource_manager.h" />
+    <ClInclude Include="src\system\resource_manager_base.h" />
+    <ClInclude Include="src\system\resource_reference_counter.h" />
+    <ClInclude Include="src\system\resource_sound.h" />
+    <ClInclude Include="src\system\scene_base.h" />
+    <ClInclude Include="src\system\scene_manager.h" />
+    <ClInclude Include="src\system\resource_sound_manager.h" />
     <ClInclude Include="src\tdGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

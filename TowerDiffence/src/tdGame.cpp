@@ -1,6 +1,6 @@
 
 #include "tdGame.h"
-#include "system/scene/manager.h"
+#include "system/scene_manager.h"
 #include "scenes.h"
 #include <boost/make_shared.hpp>
 //debug
@@ -47,6 +47,11 @@ int Game::Run() {
 			DxLib::DrawString(0, 0, ss.str().c_str(), DxLib::GetColor(255 ,0 ,0));
 		}
 		fps_controller.Update();
+
+		// draw
+		if (DxLib::ScreenFlip() != 0) {
+			return -1;
+		}
 	}
 
 	int res = 0;
@@ -64,6 +69,8 @@ int Game::initialize() {
 	if (DxLib::SetMainWindowText("") != 0)
 		return -1;
 	if (DxLib_Init() != 0)
+		return -1;
+	if (DxLib::SetDrawScreen(DX_SCREEN_BACK) != 0)
 		return -1;
 	return 0;
 }
